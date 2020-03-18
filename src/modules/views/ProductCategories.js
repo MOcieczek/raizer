@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import ButtonBase from '@material-ui/core/ButtonBase';
+import Button from '../components/Button';
 import Container from '@material-ui/core/Container';
 import Typography from '../components/Typography';
 
@@ -81,6 +82,11 @@ const styles = theme => ({
     left: 'calc(50% - 9px)',
     transition: theme.transitions.create('opacity'),
   },
+  buttonContainer: {
+    display: 'flex',
+    flex: 1,
+    justifyContent: "center"
+  }
 });
 
 function ProductCategories(props) {
@@ -148,35 +154,18 @@ function ProductCategories(props) {
       <Typography variant="h4" marked="center" align="center" component="h2">
         For all tastes and all desires
       </Typography>
-      <div className={classes.images}>
-        {images.map(image => (
-          <ButtonBase
-            key={image.title}
-            className={classes.imageWrapper}
-            style={{
-              width: image.width,
-            }}
-          >
-            <div
-              className={classes.imageSrc}
-              style={{
-                backgroundImage: `url(${image.url})`,
-              }}
-            />
-            <div className={classes.imageBackdrop} />
-            <div className={classes.imageButton}>
-              <Typography
-                component="h3"
-                variant="h6"
-                color="inherit"
-                className={classes.imageTitle}
-              >
-                {image.title}
-                <div className={classes.imageMarked} />
-              </Typography>
-            </div>
-          </ButtonBase>
-        ))}
+      <div className={classes.buttonContainer}>      
+        <Button
+          color="secondary"
+          variant="contained"
+          size="large"
+          className={classes.button}
+          component="a"
+          target="_blank"
+          href="https://raizerwaitlist.typeform.com/to/pBcsAG"
+        >
+          Register
+        </Button>
       </div>
     </Container>
   );

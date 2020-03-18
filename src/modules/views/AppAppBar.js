@@ -9,6 +9,7 @@ import Toolbar, { styles as toolbarStyles } from '../components/Toolbar';
 const styles = theme => ({
   title: {
     fontSize: 24,
+    
   },
   placeholder: toolbarStyles(theme).root,
   toolbar: {
@@ -42,15 +43,15 @@ function AppAppBar(props) {
     <div>
       <AppBar position="fixed">
         <Toolbar className={classes.toolbar}>
-          <div className={classes.left} />
+          <div />
           <Link
-            variant="h6"
+            variant="h1"
             underline="none"
             color="inherit"
             className={classes.title}
-            href="/premium-themes/onepirate/"
+            href="/"
           >
-            {'onepirate'}
+            {'RAIZER'}
           </Link>
           <div className={classes.right}>
             <Link
@@ -58,18 +59,12 @@ function AppAppBar(props) {
               variant="h6"
               underline="none"
               className={classes.rightLink}
-              href="/premium-themes/onepirate/sign-in/"
+              target="_blank"
+              href="https://raizerwaitlist.typeform.com/to/pBcsAG"
             >
-              {'Sign In'}
+              {'Waitlist'}
             </Link>
-            <Link
-              variant="h6"
-              underline="none"
-              className={clsx(classes.rightLink, classes.linkSecondary)}
-              href="/premium-themes/onepirate/sign-up/"
-            >
-              {'Sign Up'}
-            </Link>
+      
           </div>
         </Toolbar>
       </AppBar>
