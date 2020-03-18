@@ -20,8 +20,9 @@ const styles = theme => ({
   h5: {
     marginBottom: theme.spacing(4),
     marginTop: theme.spacing(4),
+    maxWidth: "60%",
     [theme.breakpoints.up('sm')]: {
-      marginTop: theme.spacing(10),
+      marginTop: theme.spacing(1),
     },
   },
   more: {
@@ -37,13 +38,12 @@ function ProductHero(props) {
       {/* Increase the network loading priority of the background image. */}
       <img style={{ display: 'none' }} src={backgroundImage} alt="increase priority" />
       <Typography color="inherit" align="center" variant="h2" marked="center">
-        Upgrade your Sundays
+        FUNDRAISING RE-INVENTED
       </Typography>
       <Typography color="inherit" align="center" variant="h5" className={classes.h5}>
-        Enjoy secret offers up to -70% off the best luxury hotels every Sunday.
+        Raizer helps you find relevant investors, and brings structure and efficiency to your fundraising. 
       </Typography>
       <Button
-        color="secondary"
         variant="contained"
         size="large"
         className={classes.button}
@@ -51,7 +51,7 @@ function ProductHero(props) {
         target="_blank"
         href="https://raizerwaitlist.typeform.com/to/pBcsAG"
       >
-        Register
+        Waitlist
       </Button>
       <Typography variant="body2" color="inherit" className={classes.more}>
         Discover the experience

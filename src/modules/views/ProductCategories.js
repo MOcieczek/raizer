@@ -156,7 +156,6 @@ function ProductCategories(props) {
       </Typography>
       <div className={classes.buttonContainer}>      
         <Button
-          color="secondary"
           variant="contained"
           size="large"
           className={classes.button}

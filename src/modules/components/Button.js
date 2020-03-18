@@ -8,11 +8,14 @@ export default withStyles(theme => ({
     fontFamily: theme.typography.fontFamilySecondary,
     padding: theme.spacing(2, 4),
     fontSize: theme.typography.pxToRem(14),
+    backgroundColor: 'black',  
+    color: 'white',  
     boxShadow: 'none',
     '&:active, &:focus': {
       boxShadow: 'none',
+      },
     },
-  },
+    
   sizeSmall: {
     padding: theme.spacing(1, 3),
     fontSize: theme.typography.pxToRem(13),
