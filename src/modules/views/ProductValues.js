@@ -60,8 +60,8 @@ function ProductValues(props) {
                 FIND INVESTORS
               </Typography>
               <Typography variant="h5">
-                {'From the latest trendy boutique hotel to the iconic palace with XXL pool'}
-                {', go for a mini-vacation just a few subway stops away from your home.'}
+                {'Free list of 3000+ global investors, from seed to late stage, with filters to help you find relevant investors.'}
+          
               </Typography>
             </div>
           </Grid>
@@ -73,11 +73,11 @@ function ProductValues(props) {
                 alt="graph"
               />
               <Typography variant="h6" className={classes.title}>
-                New experiences
+                MANAGE LEADS
               </Typography>
               <Typography variant="h5">
-                {'Privatize a pool, take a Japanese bath or wake up in 900m2 of garden… '}
-                {'your Sundays will not be alike.'}
+                {'Build your own list of favorites, assign owner, set status and manage your deal funnel efficiently.'}
+                
               </Typography>
             </div>
           </Grid>
@@ -89,11 +89,11 @@ function ProductValues(props) {
                 alt="clock"
               />
               <Typography variant="h6" className={classes.title}>
-                Exclusive rates
+                SHARE DOCS
               </Typography>
               <Typography variant="h5">
-                {'By registering, you will access specially negotiated rates '}
-                {'that you will not find anywhere else.'}
+                {'Upload your docs, invite investors to your data room and easliy manage who sees what.'}
+                
               </Typography>
             </div>
           </Grid>
