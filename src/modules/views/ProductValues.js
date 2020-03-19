@@ -9,11 +9,11 @@ const styles = theme => ({
   root: {
     display: 'flex',
     overflow: 'hidden',
-    backgroundColor: theme.palette.secondary.light,
+    backgroundColor: "white",
   },
   container: {
     marginTop: theme.spacing(15),
-    marginBottom: theme.spacing(30),
+    marginBottom: theme.spacing(20),
     display: 'flex',
     position: 'relative',
   },
@@ -28,7 +28,7 @@ const styles = theme => ({
   },
   title: {
     marginTop: theme.spacing(5),
-    marginBottom: theme.spacing(5),
+    marginBottom:"10%",
   },
   curvyLines: {
     pointerEvents: 'none',
@@ -56,7 +56,7 @@ function ProductValues(props) {
                 src="/static/themes/onepirate/productValues1.svg"
                 alt="suitcase"
               />
-              <Typography variant="h6" className={classes.title}>
+              <Typography variant="h4" className={classes.title}>
                 FIND INVESTORS
               </Typography>
               <Typography variant="h5">
@@ -72,7 +72,7 @@ function ProductValues(props) {
                 src="/static/themes/onepirate/productValues2.svg"
                 alt="graph"
               />
-              <Typography variant="h6" className={classes.title}>
+              <Typography variant="h4" className={classes.title}>
                 MANAGE LEADS
               </Typography>
               <Typography variant="h5">
@@ -88,7 +88,7 @@ function ProductValues(props) {
                 src="/static/themes/onepirate/productValues3.svg"
                 alt="clock"
               />
-              <Typography variant="h6" className={classes.title}>
+              <Typography variant="h4" className={classes.title}>
                 SHARE DOCS
               </Typography>
               <Typography variant="h5">
