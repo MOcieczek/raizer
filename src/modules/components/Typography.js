@@ -15,7 +15,7 @@ const styles = theme => ({
     height: 4,
     width: 55,
     display: 'block',
-  
+    margin: `${theme.spacing(1)}px auto 0`,
   },
   markedH4Center: {
     height: 4,

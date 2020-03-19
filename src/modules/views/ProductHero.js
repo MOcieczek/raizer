@@ -36,7 +36,7 @@ function ProductHero(props) {
   return (
     <ProductHeroLayout backgroundClassName={classes.background}>
       {/* Increase the network loading priority of the background image. */}
-      <img style={{ display: 'none' }} src={backgroundImage} alt="increase priority" />
+      
       <Typography color="inherit" align="center" variant="h2" marked="center">
         FUNDRAISING RE-INVENTED
       </Typography>
@@ -54,7 +54,7 @@ function ProductHero(props) {
         Waitlist
       </Button>
       <Typography variant="body2" color="inherit" className={classes.more}>
-        Discover the experience
+        Sign up to our waitlist, and be the first one to try Raizer when we launch! 
       </Typography>
     </ProductHeroLayout>
   );
