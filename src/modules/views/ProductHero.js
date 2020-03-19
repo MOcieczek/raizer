@@ -6,7 +6,7 @@ import Typography from '../components/Typography';
 import ProductHeroLayout from './ProductHeroLayout';
 
 const backgroundImage =
-  '//www.krome.sg/wp-content/media/web-design-singapore-krome-bg-5.jpg';
+  'https://www.krome.sg/wp-content/media/web-design-singapore-krome-bg-5.jpg';
 
 const styles = theme => ({
   background: {
