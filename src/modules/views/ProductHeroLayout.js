@@ -61,9 +61,9 @@ function ProductHeroLayout(props) {
         <div className={clsx(classes.background, backgroundClassName)} />
         <img
           className={classes.arrowDown}
-          src="/static/themes/onepirate/productHeroArrowDown.png"
-          height="16"
-          width="12"
+          src="https://www.stickpng.com/assets/thumbs/58f8bd170ed2bdaf7c128308.png"
+          height="32"
+          width="32"
           alt="arrow down"
         />
       </Container>
