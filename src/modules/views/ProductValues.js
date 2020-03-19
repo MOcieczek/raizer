@@ -13,7 +13,7 @@ const styles = theme => ({
   },
   container: {
     marginTop: theme.spacing(15),
-    marginBottom: theme.spacing(20),
+    marginBottom: theme.spacing(10),
     display: 'flex',
     position: 'relative',
   },

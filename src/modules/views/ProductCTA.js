@@ -21,7 +21,7 @@ const styles = theme => ({
   card: {
     display: 'flex',
     justifyContent: 'center',
-    backgroundColor: theme.palette.warning.main,
+    backgroundColor: "#A8FFDB",
     padding: theme.spacing(8, 3),
   },
   cardContent: {
@@ -33,7 +33,7 @@ const styles = theme => ({
     marginBottom: theme.spacing(2),
   },
   button: {
-    width: '100%',
+    minWidth: 150,
   },
   imagesWrapper: {
     position: 'relative',
@@ -78,34 +78,37 @@ function ProductCTA(props) {
           <div className={classes.card}>
             <form onSubmit={handleSubmit} className={classes.cardContent}>
               <Typography variant="h2" component="h2" gutterBottom>
-                Receive offers
+                HEY FOUNDERS!
               </Typography>
               <Typography variant="h5">
-                Taste the holidays of the everyday close to home.
+                Sign up to our waitlist, and you'll be fundraising like a super star before you know it ✌️
               </Typography>
-              <TextField noBorder className={classes.textField} placeholder="Your email" />
-              <Button type="submit" color="primary" variant="contained" className={classes.button}>
-                Keep me updated
+              <br></br>
+              <Button
+                variant="contained"
+                size="large"
+                className={classes.button}
+                component="a"
+                target="_blank"
+                href="https://raizerwaitlist.typeform.com/to/pBcsAG"
+              >
+                Waitlist
               </Button>
             </form>
           </div>
         </Grid>
-        <Grid item xs={12} md={6} className={classes.imagesWrapper}>
+        {/*<Grid item xs={12} md={6} className={classes.imagesWrapper}>
           <Hidden smDown>
             <div className={classes.imageDots} />
             <img
-              src="https://images.unsplash.com/photo-1527853787696-f7be74f2e39a?auto=format&fit=crop&w=750&q=80"
+              src="https://media3.giphy.com/media/xT0GqqWj0MagW1COzu/giphy.gif"
               alt="call to action"
               className={classes.image}
             />
           </Hidden>
-        </Grid>
+        </Grid>*/}
       </Grid>
-      <Snackbar
-        open={open}
-        onClose={handleClose}
-        message="We will send you our best offers, once a week."
-      />
+ 
     </Container>
   );
 }
