@@ -61,7 +61,7 @@ function ProductValues(props) {
                 FIND INVESTORS
               </Typography>
               <Typography variant="h5">
-                {'Free list of 3000+ global investors, from seed to late stage, with filters to help you find relevant investors.'}
+                {'Free list of 3000+ global investors, from seed to late stage, with filters to help you find the relevant ones.'}
           
               </Typography>
             </div>

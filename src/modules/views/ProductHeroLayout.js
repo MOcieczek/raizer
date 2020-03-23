@@ -4,9 +4,11 @@ import clsx from 'clsx';
 import { withStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Pointer from '../../assets/pointer-down.png';
+import Background from '../../assets/background.png';
 
 const styles = theme => ({
   root: {
+    
     color: theme.palette.common.white,
     position: 'relative',
     display: 'flex',
@@ -25,6 +27,7 @@ const styles = theme => ({
     alignItems: 'center',
   },
   backdrop: {
+    backgroundImage: {Background},
     position: 'absolute',
     left: 0,
     right: 0,
@@ -43,6 +46,7 @@ const styles = theme => ({
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     zIndex: -2,
+    
   },
   arrowDown: {
     position: 'absolute',

@@ -1,15 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
-import ButtonBase from '@material-ui/core/ButtonBase';
 import Button from '../components/Button';
 import Container from '@material-ui/core/Container';
 import Typography from '../components/Typography';
 
+
 const styles = theme => ({
   root: {
-    //marginTop: theme.spacing(8),//
-    //marginBottom: theme.spacing(4),//
+  //marginTop: theme.spacing(8),//
+    marginBottom: theme.spacing(4),
     backgroundColor:"blue",
   },
  

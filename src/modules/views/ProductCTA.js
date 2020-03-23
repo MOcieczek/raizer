@@ -74,7 +74,7 @@ function ProductCTA(props) {
           <div className={classes.card}>
             <form onSubmit={handleSubmit} className={classes.cardContent}>
               <Typography variant="h2" component="h2" gutterBottom>
-                HEY FOUNDERS!
+                Hey founders!
               </Typography>
               <Typography variant="h5">
                 Sign up to our waitlist, and you'll be fundraising like a super star before you know it ✌️

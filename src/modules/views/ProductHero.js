@@ -11,7 +11,6 @@ const backgroundImage =
 
 const styles = theme => ({
   background: {
-
     backgroundPosition: 'center',
   },
   button: {
@@ -41,7 +40,7 @@ function ProductHero(props) {
       <Typography color="inherit" align="center" variant="h2" marked="center">
         FUNDRAISING RE-INVENTED
       </Typography>
-      <Typography color="inherit" align="center" variant="h5" className={classes.h5}>
+      <Typography color="white" align="center" variant="h5" className={classes.h5}>
         Raizer helps you find relevant investors, and brings structure and efficiency to your fundraising. 
       </Typography>
       <Button
@@ -54,7 +53,7 @@ function ProductHero(props) {
       >
         Waitlist
       </Button>
-      <Typography variant="body2" color="inherit" className={classes.more}>
+      <Typography variant="body2" align="center" color="inherit" className={classes.more}>
         Sign up to our waitlist, and be the first one to try Raizer when we launch! 
       </Typography>
     </ProductHeroLayout>
