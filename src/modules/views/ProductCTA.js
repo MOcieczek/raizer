@@ -11,8 +11,8 @@ import InvestorList from '../../assets/investorList.png';
 
 const styles = theme => ({
   root: {
-    marginTop: theme.spacing(10),
-    marginBottom: 0,
+    marginTop: theme.spacing(2),
+    marginBottom: 30,
     display: 'flex',
   },
   cardWrapper: {

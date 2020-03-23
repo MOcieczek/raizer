@@ -11,7 +11,9 @@ const styles = theme => ({
     flexDirection: 'column',
     alignItems: 'center',
     marginTop: theme.spacing(9),
-    marginBottom: theme.spacing(9),
+    marginBottom: theme.spacing(9),    
+    backgroundColor:"#574EFF",
+    
   },
   button: {
     border: '4px solid currentColor',
@@ -32,13 +34,13 @@ function ProductSmokingHero(props) {
   const { classes } = props;
 
   return (
+  
     <Container className={classes.root} component="section">
-      <Button className={classes.button}>
-        <Typography variant="h4" component="span">
+        <Typography variant="h4" component="span" align="center">
           THE ULTIMATE TOOL FOR FOUNDRAISING FOUNDERS
         </Typography>
-      </Button>
-      <Typography variant="subtitle1" className={classes.link}>
+        <br></br>
+      <Typography variant="subtitle1" align="center">
       Brought to you by founders who know the struggle. 
       </Typography>
       {/*<img src="/static/themes/onepirate/producBuoy.svg" className={classes.buoy} alt="buoy" />*/}

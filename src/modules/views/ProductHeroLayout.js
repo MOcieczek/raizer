@@ -20,21 +20,19 @@ const styles = theme => ({
     },
   },
   container: {
-    marginTop: theme.spacing(3),
-    marginBottom: theme.spacing(14),
+    marginTop: theme.spacing(10),
+    marginBottom: theme.spacing(10),
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
   },
   backdrop: {
-    backgroundImage: {Background},
     position: 'absolute',
     left: 0,
     right: 0,
     top: 0,
     bottom: 0,
-    backgroundColor:"#0000ff",
-    opacity: 0.5,
+    backgroundColor:"#574EFF",
     zIndex: -1,
   },
   background: {
@@ -52,6 +50,7 @@ const styles = theme => ({
     position: 'absolute',
     bottom: theme.spacing(4),
   },
+
 });
 
 function ProductHeroLayout(props) {

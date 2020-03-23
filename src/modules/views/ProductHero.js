@@ -15,15 +15,25 @@ const styles = theme => ({
   },
   button: {
     minWidth: 150,
-    
   },
+
+
   h5: {
     marginBottom: theme.spacing(4),
     marginTop: theme.spacing(4),
-    maxWidth: "60%",
+    marginLeft: "5%",
+    marginRight: "5%",
     [theme.breakpoints.up('sm')]: {
       marginTop: theme.spacing(1),
     },
+  },
+
+  body2: {
+    marginBottom: theme.spacing(4),
+    marginTop: theme.spacing(4),
+    marginLeft: "5%",
+    marginRight: "5%",
+
   },
   more: {
     marginTop: theme.spacing(2),
