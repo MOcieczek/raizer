@@ -35,7 +35,7 @@ function ProductSmokingHero(props) {
     <Container className={classes.root} component="section">
       <Button className={classes.button}>
         <Typography variant="h4" component="span">
-          THE TOOL FOR FOUNDRAISING FOUNDERS
+          THE ULTIMATE TOOL FOR FOUNDRAISING FOUNDERS
         </Typography>
       </Button>
       <Typography variant="subtitle1" className={classes.link}>

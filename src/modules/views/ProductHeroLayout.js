@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import { withStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
+import Pointer from '../../assets/pointer-down.png';
 
 const styles = theme => ({
   root: {
@@ -29,7 +30,7 @@ const styles = theme => ({
     right: 0,
     top: 0,
     bottom: 0,
-    //backgroundColor: theme.palette.common.black//
+    backgroundColor:"#0000ff",
     opacity: 0.5,
     zIndex: -1,
   },
@@ -61,7 +62,7 @@ function ProductHeroLayout(props) {
         <div className={clsx(classes.background, backgroundClassName)} />
         <img
           className={classes.arrowDown}
-          src="https://www.stickpng.com/assets/thumbs/58f8bd170ed2bdaf7c128308.png"
+          src={Pointer}
           height="32"
           width="32"
           alt="arrow down"

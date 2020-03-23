@@ -5,9 +5,9 @@ import Grid from '@material-ui/core/Grid';
 import Hidden from '@material-ui/core/Hidden';
 import Container from '@material-ui/core/Container';
 import Typography from '../components/Typography';
-import TextField from '../components/TextField';
-import Snackbar from '../components/Snackbar';
 import Button from '../components/Button';
+import InvestorList from '../../assets/investorList.png';
+
 
 const styles = theme => ({
   root: {
@@ -27,11 +27,7 @@ const styles = theme => ({
   cardContent: {
     maxWidth: 400,
   },
-  textField: {
-    width: '100%',
-    marginTop: theme.spacing(3),
-    marginBottom: theme.spacing(2),
-  },
+
   button: {
     minWidth: 150,
   },
@@ -97,21 +93,22 @@ function ProductCTA(props) {
             </form>
           </div>
         </Grid>
-        {/*<Grid item xs={12} md={6} className={classes.imagesWrapper}>
+        <Grid item xs={12} md={6} className={classes.imagesWrapper}>
           <Hidden smDown>
             <div className={classes.imageDots} />
             <img
-              src="https://media3.giphy.com/media/xT0GqqWj0MagW1COzu/giphy.gif"
-              alt="call to action"
+              src={InvestorList}
+              alt="image"
               className={classes.image}
             />
           </Hidden>
-        </Grid>*/}
+        </Grid>
       </Grid>
  
     </Container>
   );
 }
+
 
 ProductCTA.propTypes = {
   classes: PropTypes.object.isRequired,
