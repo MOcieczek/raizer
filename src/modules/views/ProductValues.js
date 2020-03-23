@@ -4,6 +4,11 @@ import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 import Typography from '../components/Typography';
+import Money from '../../assets/money.png';
+import Chat from '../../assets/chat.png';
+import Docs from '../../assets/docs.png';
+
+
 
 const styles = theme => ({
   root: {
@@ -24,7 +29,7 @@ const styles = theme => ({
     padding: theme.spacing(0, 5),
   },
   image: {
-    height: 55,
+    height: 35,
   },
   title: {
     marginTop: theme.spacing(5),
@@ -43,18 +48,14 @@ function ProductValues(props) {
   return (
     <section className={classes.root}>
       <Container className={classes.container}>
-        <img
-          src="/static/themes/onepirate/productCurvyLines.png"
-          className={classes.curvyLines}
-          alt="curvy lines"
-        />
+     
         <Grid container spacing={5}>
           <Grid item xs={12} md={4}>
             <div className={classes.item}>
               <img
                 className={classes.image}
-                src="/static/themes/onepirate/productValues1.svg"
-                alt="suitcase"
+                src={Money}
+                alt="money"
               />
               <Typography variant="h4" className={classes.title}>
                 FIND INVESTORS
@@ -69,8 +70,8 @@ function ProductValues(props) {
             <div className={classes.item}>
               <img
                 className={classes.image}
-                src="/static/themes/onepirate/productValues2.svg"
-                alt="graph"
+                src={Chat}
+                alt="chat"
               />
               <Typography variant="h4" className={classes.title}>
                 MANAGE LEADS
@@ -85,8 +86,8 @@ function ProductValues(props) {
             <div className={classes.item}>
               <img
                 className={classes.image}
-                src="/static/themes/onepirate/productValues3.svg"
-                alt="clock"
+                src={Docs}
+                alt="docs"
               />
               <Typography variant="h4" className={classes.title}>
                 SHARE DOCS

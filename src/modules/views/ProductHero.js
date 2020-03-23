@@ -6,12 +6,12 @@ import Typography from '../components/Typography';
 import ProductHeroLayout from './ProductHeroLayout';
 import Background from '../../assets/background.png';
 
-
+const backgroundImage =
+  'https://www.krome.sg/wp-content/media/web-design-singapore-krome-bg-5.jpg';
 
 const styles = theme => ({
   background: {
-    backgroundImage:{Background},
-    backgroundColor: '#7fc7d9', // Average color of the background image.
+
     backgroundPosition: 'center',
   },
   button: {
