@@ -28,7 +28,7 @@ const styles = theme => ({
     alignItems: 'center',
   },
   backdrop: {
-    backgroundImage:"url('https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg')",
+    backgroundImage:`url( ${Background} )`,
     backgroundSize: 'cover',
     position: 'absolute',
     left: 0,
