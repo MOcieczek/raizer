@@ -6,9 +6,10 @@ import Container from '@material-ui/core/Container';
 import Pointer from '../../assets/pointer-down.png';
 import Background from '../../assets/background.png';
 
+
+
 const styles = theme => ({
   root: {
-    
     color: theme.palette.common.white,
     position: 'relative',
     display: 'flex',
@@ -27,13 +28,17 @@ const styles = theme => ({
     alignItems: 'center',
   },
   backdrop: {
+    backgroundImage:"url('https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg')",
+    backgroundSize: 'cover',
     position: 'absolute',
     left: 0,
     right: 0,
     top: 0,
     bottom: 0,
     backgroundColor:"#574EFF",
+    opacity: "100%",
     zIndex: -1,
+   
   },
   background: {
     position: 'absolute',
@@ -44,7 +49,8 @@ const styles = theme => ({
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     zIndex: -2,
-    
+
+   
   },
   arrowDown: {
     position: 'absolute',
@@ -54,13 +60,16 @@ const styles = theme => ({
 });
 
 function ProductHeroLayout(props) {
+  
   const { backgroundClassName, children, classes } = props;
-
+  
   return (
     <section className={classes.root}>
-      <Container className={classes.container}>
       
+      <Container className={classes.container}>
+     
         {children}
+        
         <div className={classes.backdrop} />
         <div className={clsx(classes.background, backgroundClassName)} />
         <img
