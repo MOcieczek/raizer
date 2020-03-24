@@ -11,11 +11,11 @@ import Background from '../../assets/background.png';
 const styles = theme => ({
   root: {
     color: theme.palette.common.white,
-    position: 'inherit',
+    position: 'relative',
     display: 'flex',
     alignItems: 'center',
     [theme.breakpoints.up('sm')]: {
-      height: 'auto',
+      height: '80vh',
       minHeight: 500,
       maxHeight: 1300,
     },
