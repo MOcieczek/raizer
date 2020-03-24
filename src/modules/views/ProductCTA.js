@@ -107,7 +107,7 @@ function ProductCTA(props) {
             <div className={classes.imageDots} />
             <img
               src={InvestorList}
-              alt="image"
+              alt="list"
               className={classes.image}
             />
           </Hidden>
