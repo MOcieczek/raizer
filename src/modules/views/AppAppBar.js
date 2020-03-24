@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import clsx from 'clsx';
 import { withStyles } from '@material-ui/core/styles';
 import Link from '@material-ui/core/Link';
 import AppBar from '../components/AppBar';
@@ -46,7 +45,6 @@ function AppAppBar(props) {
         <Toolbar className={classes.toolbar}>
           <div />
             <img 
-        
             height="30"
             alt="logo"
             src={Logo}

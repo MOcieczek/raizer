@@ -56,16 +56,14 @@ const styles = theme => ({
 
 function ProductCTA(props) {
   const { classes } = props;
-  const [open, setOpen] = React.useState(false);
+  const [setOpen] = React.useState(false);
 
   const handleSubmit = event => {
     event.preventDefault();
     setOpen(true);
   };
 
-  const handleClose = () => {
-    setOpen(false);
-  };
+  
 
   return (
     <Container className={classes.root} component="section">
@@ -77,7 +75,7 @@ function ProductCTA(props) {
                 Hey founders!
               </Typography>
               <Typography variant="h5">
-                Sign up to our waitlist, and you'll be fundraising like a super star before you know it ✌️
+                Sign up to our waitlist, and you'll be fundraising like a super star before you know it <span className={classes.img}>✌️</span>
               </Typography>
               <br></br>
               <Button

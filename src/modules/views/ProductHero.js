@@ -67,6 +67,7 @@ function ProductHero(props) {
         Sign up to our waitlist, and be the first one to try Raizer when we launch! 
       </Typography>
     </ProductHeroLayout>
+
   );
 }
 

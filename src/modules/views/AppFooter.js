@@ -1,6 +1,5 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 import Typography from '../components/Typography';
 
@@ -46,16 +45,6 @@ const useStyles = makeStyles(theme => ({
 
 }));
 
-{/*const LANGUAGES = [
-  {
-    code: 'en-US',
-    name: 'English',
-  },
-  {
-    code: 'fr-FR',
-    name: 'Français',
-  },
-];*/}
 
 export default function AppFooter() {
   const classes = useStyles();
