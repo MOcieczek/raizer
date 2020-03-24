@@ -8,6 +8,17 @@ import Typography from '../components/Typography';
 import Button from '../components/Button';
 import InvestorList from '../../assets/investorList.png';
 
+const Emoji = props => (
+  <span
+      className="emoji"
+      role="img"
+      aria-label={props.label ? props.label : ""}
+      aria-hidden={props.label ? "false" : "true"}
+  >
+      {props.symbol}
+  </span>
+);
+
 
 const styles = theme => ({
   root: {
@@ -75,7 +86,7 @@ function ProductCTA(props) {
                 Hey founders!
               </Typography>
               <Typography variant="h5">
-                Sign up to our waitlist, and you'll be fundraising like a super star before you know it <span className={classes.img}>✌️</span>
+                Sign up to our waitlist, and you'll be fundraising like a super star before you know it <Emoji symbol="✌️" label="winning"/>
               </Typography>
               <br></br>
               <Button
@@ -113,3 +124,4 @@ ProductCTA.propTypes = {
 };
 
 export default withStyles(styles)(ProductCTA);
+
