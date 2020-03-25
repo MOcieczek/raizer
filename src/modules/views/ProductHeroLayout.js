@@ -15,7 +15,7 @@ const styles = theme => ({
     display: 'flex',
     alignItems: 'center',
     [theme.breakpoints.up('sm')]: {
-      height: '80vh',
+      height: '70vh',
       minHeight: 500,
       maxHeight: 1300,
     },
@@ -25,7 +25,7 @@ const styles = theme => ({
     marginBottom: theme.spacing(10),
     display: 'flex',
     flexDirection: 'column',
-    alignItems: 'center',
+    alignItems: 'left',
   },
   backdrop: {
     backgroundImage:`url( ${Background} )`,

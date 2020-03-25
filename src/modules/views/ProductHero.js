@@ -10,20 +10,19 @@ import ProductHeroLayout from './ProductHeroLayout';
 const styles = theme => ({
   background: {
     backgroundPosition: 'center',
-
   },
   button: {
     minWidth: 150,
+    maxWidth: 150,
   },
 
 
   h5: {
-    marginBottom: theme.spacing(4),
-    marginTop: theme.spacing(4),
-    marginLeft: "5%",
-    marginRight: "5%",
+    marginBottom: theme.spacing(3),
+    marginTop: theme.spacing(2),
     [theme.breakpoints.up('sm')]: {
       marginTop: theme.spacing(1),
+    
     },
   },
 
@@ -32,6 +31,7 @@ const styles = theme => ({
     marginTop: theme.spacing(4),
     marginLeft: "5%",
     marginRight: "5%",
+ 
 
   },
   more: {
@@ -46,10 +46,10 @@ function ProductHero(props) {
     <ProductHeroLayout backgroundClassName={classes.background}>
       {/* Increase the network loading priority of the background image. */}
       
-      <Typography color="inherit" align="center" variant="h2" marked="center">
+      <Typography color="inherit" variant="h2" marked="center">
         FUNDRAISING RE-INVENTED
       </Typography>
-      <Typography color="white" align="center" variant="h5" className={classes.h5}>
+      <Typography color="inherit" variant="h5" className={classes.h5}>
         Raizer helps you find relevant investors, and brings structure and efficiency to your fundraising. 
       </Typography>
       <Button
@@ -62,7 +62,7 @@ function ProductHero(props) {
       >
         Waitlist
       </Button>
-      <Typography variant="body2" align="center" color="inherit" className={classes.more}>
+      <Typography variant="body2" color="inherit" className={classes.more}>
         Sign up to our waitlist, and be the first one to try Raizer when we launch! 
       </Typography>
     </ProductHeroLayout>
