@@ -10,6 +10,7 @@ import ProductHeroLayout from './ProductHeroLayout';
 const styles = theme => ({
   background: {
     backgroundPosition: 'center',
+
   },
   button: {
     minWidth: 150,
