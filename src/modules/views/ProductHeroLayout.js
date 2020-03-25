@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import { withStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-import Pointer from '../../assets/pointer-down.png';
 import Background from '../../assets/background.png';
 
 
@@ -54,10 +53,7 @@ const styles = theme => ({
 
    
   },
-  arrowDown: {
-    position: 'absolute',
-    bottom: theme.spacing(4),
-  },
+  
 
 });
 
@@ -74,13 +70,7 @@ function ProductHeroLayout(props) {
         
         <div className={classes.backdrop} />
         <div className={clsx(classes.background, backgroundClassName)} />
-        <img
-          className={classes.arrowDown}
-          src={Pointer}
-          height="32"
-          width="32"
-          alt="arrow down"
-        />
+       
       </Container>
     </section>
   );

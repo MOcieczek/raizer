@@ -4,6 +4,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Button from '../components/Button';
 import Typography from '../components/Typography';
 import ProductHeroLayout from './ProductHeroLayout';
+import Pointer from '../../assets/pointer-down.png';
 
 
 
@@ -15,14 +16,16 @@ const styles = theme => ({
     minWidth: 150,
     maxWidth: 150,
   },
-
+  arrowDown: {
+    
+    bottom: theme.spacing(3),
+  },
 
   h5: {
     marginBottom: theme.spacing(3),
     marginTop: theme.spacing(2),
     [theme.breakpoints.up('sm')]: {
-      marginTop: theme.spacing(1),
-    
+      marginTop: theme.spacing(1),    
     },
   },
 
@@ -31,8 +34,6 @@ const styles = theme => ({
     marginTop: theme.spacing(4),
     marginLeft: "5%",
     marginRight: "5%",
- 
-
   },
   more: {
     marginTop: theme.spacing(2),
@@ -65,6 +66,13 @@ function ProductHero(props) {
       <Typography variant="body2" color="inherit" className={classes.more}>
         Sign up to our waitlist, and be the first one to try Raizer when we launch! 
       </Typography>
+      <img
+          className={classes.arrowDown}
+          src={Pointer}
+          height="32"
+          width="32"
+          alt="arrow down"
+        />
     </ProductHeroLayout>
 
   );
