@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
-import Button from '../components/Button';
 import Typography from '../components/Typography';
 
 const styles = theme => ({
@@ -57,11 +56,7 @@ function ProductHowItWorks(props) {
   return (
     <section className={classes.root}>
       <Container className={classes.container}>
-        <img
-          src="/static/themes/onepirate/productCurvyLines.png"
-          className={classes.curvyLines}
-          alt="curvy lines"
-        />
+    
         <Typography variant="h4" marked="center" className={classes.title} component="h2">
           How it works
         </Typography>
@@ -109,16 +104,7 @@ function ProductHowItWorks(props) {
             </Grid>
           </Grid>
         </div>
-        <Button
-          color="secondary"
-          size="large"
-          variant="contained"
-          className={classes.button}
-          component="a"
-          href="/premium-themes/onepirate/sign-up/"
-        >
-          Get started
-        </Button>
+ 
       </Container>
     </section>
   );

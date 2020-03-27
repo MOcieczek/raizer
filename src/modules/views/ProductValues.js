@@ -15,12 +15,17 @@ const styles = theme => ({
     display: 'flex',
     overflow: 'hidden',
     backgroundColor: "white",
+    backgroundColor: theme.palette.secondary.light,
+
   },
   container: {
-    marginTop: theme.spacing(15),
+    marginTop: theme.spacing(7),
     marginBottom: theme.spacing(10),
     display: 'flex',
     position: 'relative',
+    flexDirection: 'column',
+    alignItems: 'center',
+
   },
   item: {
     display: 'flex',
@@ -48,49 +53,47 @@ function ProductValues(props) {
   return (
     <section className={classes.root}>
       <Container className={classes.container}>
-        <Grid container spacing={5}>
-          <Grid item xs={12} md={4}>
-            <div className={classes.item}>
-            <LocalAtmOutlined style={{ fontSize: 50 }} className={classes.icon}/>
-              <Typography variant="h4" className={classes.title}>
+              <Typography variant="h2" className={classes.title}>
+                HOW IT WORKS
+              </Typography>
+        <div>
+          <Grid container spacing={5}>
+            <Grid item xs={12} md={4}>
+              <div className={classes.item}>
+                <LocalAtmOutlined style={{ fontSize: 50 }} className={classes.icon}/>
+                <Typography variant="h4" className={classes.title}>
                 FIND INVESTORS
-              </Typography>
-              <Typography variant="h5">
-                {'Free list of 3000+ global investors, from seed to late stage, with filters to help you find the relevant ones.'}
-          
-              </Typography>
-            </div>
-          </Grid>
-          <Grid item xs={12} md={4}>
-            <div className={classes.item}>
-            <FavoriteBorderOutlined style={{ fontSize: 50 }} className={classes.icon}/>
-
-              <Typography variant="h4" className={classes.title}>
+                </Typography>
+                <Typography variant="h5">
+                Free list of 3000+ global investors, from seed to late stage, with filters to help you find the relevant ones.
+                </Typography>
+              </div>
+            </Grid>
+            <Grid item xs={12} md={4}>
+              <div className={classes.item}>
+                <FavoriteBorderOutlined style={{ fontSize: 50 }} className={classes.icon}/>
+                <Typography variant="h4" className={classes.title}>
                 MANAGE LEADS
-              </Typography>
-              <Typography variant="h5">
-                {'Build your own list of favorites, assign owner, set status and manage your deal funnel efficiently.'}
-                
-              </Typography>
-            </div>
-          </Grid>
-          <Grid item xs={12} md={4}>
-            <div className={classes.item}>
-            <DescriptionOutlined style={{ fontSize: 50 }} className={classes.icon}/>
-
-              <Typography variant="h4" className={classes.title}>
+                </Typography>
+                <Typography variant="h5">
+                Build your own list of favorites, assign owner, set status and manage your deal funnel efficiently.
+                </Typography>
+              </div>
+            </Grid>
+            <Grid item xs={12} md={4}>
+             <div className={classes.item}>
+                <DescriptionOutlined style={{ fontSize: 50 }} className={classes.icon}/>
+                <Typography variant="h4" className={classes.title}>
                 SHARE DOCS
-              </Typography>
-              <Typography variant="h5">
-                {'Upload your docs, invite investors to your data room and easliy manage who sees what.'}
-                
-              </Typography>
-            </div>
-            
-
+                </Typography>
+                <Typography variant="h5">
+                Upload your docs, invite investors to your data room and easliy manage who sees what.
+                </Typography>
+              </div>  
+            </Grid>
           </Grid>
-        </Grid>
-      </Container>
+        </div>
+      </Container> 
     </section>
   );
 }
