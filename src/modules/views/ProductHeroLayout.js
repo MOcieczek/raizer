@@ -4,31 +4,28 @@ import clsx from 'clsx';
 import { withStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Background from '../../assets/background.png';
-import Pointer from '../../assets/pointer-down.png';
+
 
 
 
 const styles = theme => ({
   root: {
     color: theme.palette.common.white,
-    position: 'relative',
+    position: 'relaive',
     display: 'flex',
-    alignItems: 'center',
-    
     [theme.breakpoints.up('sm')]: {
       height: '70vh',
       minHeight: 500,
-      maxHeight: 1300,
     },
   },
   container: {
-    maxWidth:'300',
-    minWidth:'200',
-    marginTop: theme.spacing(10),
     marginBottom: theme.spacing(10),
+    marginTop: theme.spacing(10),
     display: 'flex',
     flexDirection: 'column',
-    
+    marginLeft: 'unset',
+    justifyContent: 'center',
+    maxWidth: "xs",
   },
   backdrop: {
     backgroundImage:`url( ${Background} )`,
@@ -43,7 +40,6 @@ const styles = theme => ({
     backgroundColor:"#574EFF",
     opacity: "100%",
     zIndex: -1,
-   
   },
   background: {
     position: 'absolute',
@@ -53,15 +49,9 @@ const styles = theme => ({
     bottom: 0,
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
-    zIndex: -2,
-  },
-  
-  arrowDown: {
-    maxHeight:30,
-    maxWidth:30,
-    marginTop: theme.spacing(5),
     
   },
+
 });
 
 function ProductHeroLayout(props) {
@@ -71,7 +61,7 @@ function ProductHeroLayout(props) {
   return (
     <section className={classes.root}>
       
-      <Container className={classes.container}>
+      <Container maxWidth="sm" className={classes.container}>
      
         {children}
         
@@ -79,12 +69,7 @@ function ProductHeroLayout(props) {
         <div className={clsx(classes.background, backgroundClassName)} />
         
       </Container>
-      <img
-          className={classes.arrowDown}
-          position="absolute"
-          src={Pointer}
-          alt="arrow down"
-        />
+     
     </section>
   );
 }
