@@ -4,9 +4,9 @@ import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 import Typography from '../components/Typography';
-import Money from '../../assets/money.png';
-import Chat from '../../assets/chat.png';
-import Docs from '../../assets/docs.png';
+import LocalAtmOutlined from '@material-ui/icons/LocalAtmOutlined';
+import FavoriteBorderOutlined from '@material-ui/icons/FavoriteBorderOutlined';
+import DescriptionOutlined from '@material-ui/icons/DescriptionOutlined';
 
 
 
@@ -35,11 +35,11 @@ const styles = theme => ({
     marginTop: theme.spacing(5),
     marginBottom:"10%",
   },
-  curvyLines: {
-    pointerEvents: 'none',
-    position: 'absolute',
-    top: -180,
-  },
+  icon: {
+    color:"#574EFF", 
+    
+  }, 
+
 });
 
 function ProductValues(props) {
@@ -48,15 +48,10 @@ function ProductValues(props) {
   return (
     <section className={classes.root}>
       <Container className={classes.container}>
-     
         <Grid container spacing={5}>
           <Grid item xs={12} md={4}>
             <div className={classes.item}>
-              <img
-                className={classes.image}
-                src={Money}
-                alt="money"
-              />
+            <LocalAtmOutlined style={{ fontSize: 50 }} className={classes.icon}/>
               <Typography variant="h4" className={classes.title}>
                 FIND INVESTORS
               </Typography>
@@ -68,11 +63,8 @@ function ProductValues(props) {
           </Grid>
           <Grid item xs={12} md={4}>
             <div className={classes.item}>
-              <img
-                className={classes.image}
-                src={Chat}
-                alt="chat"
-              />
+            <FavoriteBorderOutlined style={{ fontSize: 50 }} className={classes.icon}/>
+
               <Typography variant="h4" className={classes.title}>
                 MANAGE LEADS
               </Typography>
@@ -84,11 +76,8 @@ function ProductValues(props) {
           </Grid>
           <Grid item xs={12} md={4}>
             <div className={classes.item}>
-              <img
-                className={classes.image}
-                src={Docs}
-                alt="docs"
-              />
+            <DescriptionOutlined style={{ fontSize: 50 }} className={classes.icon}/>
+
               <Typography variant="h4" className={classes.title}>
                 SHARE DOCS
               </Typography>
@@ -97,6 +86,8 @@ function ProductValues(props) {
                 
               </Typography>
             </div>
+            
+
           </Grid>
         </Grid>
       </Container>
