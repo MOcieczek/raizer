@@ -15,8 +15,9 @@ const styles = theme => ({
     display: 'flex',
     overflow: 'hidden',
     backgroundColor: "white",
-    backgroundColor: theme.palette.secondary.light,
+    backgroundColor: "#574EFF",
     marginBottom: "5%",
+
 
   },
   container: {
@@ -26,29 +27,12 @@ const styles = theme => ({
     position: 'relative',
     flexDirection: 'column',
     alignItems: 'center',
-
   },
-  item: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    padding: theme.spacing(0, 5),
-  },
-  image: {
-    height: 35,
-  },
-  title: {
-    marginTop: theme.spacing(5),
-    marginBottom:"10%",
-  },
-  icon: {
-    color:"#574EFF", 
-    
-  }, 
+  
   headline: {
     marginTop: theme.spacing(5),
     marginBottom: theme.spacing(10), 
-
+    color: "#ffffff",
   },
 });
 
@@ -59,45 +43,9 @@ function ProductValues(props) {
     <section className={classes.root}>
       <Container className={classes.container}>
               <Typography variant="h4" className={classes.headline}>
-                HOW IT WORKS
+                WHY RAIZER
               </Typography>
-        <div>
-          <Grid container spacing={5}>
-            <Grid item xs={12} md={4}>
-              <div className={classes.item}>
-                <LocalAtmOutlined style={{ fontSize: 50 }} className={classes.icon}/>
-                <Typography variant="h4" className={classes.title}>
-                FIND INVESTORS
-                </Typography>
-                <Typography variant="h5">
-                Free list of 3000+ global investors, from seed to late stage, with filters to help you find the relevant ones.
-                </Typography>
-              </div>
-            </Grid>
-            <Grid item xs={12} md={4}>
-              <div className={classes.item}>
-                <FavoriteBorderOutlined style={{ fontSize: 50 }} className={classes.icon}/>
-                <Typography variant="h4" className={classes.title}>
-                MANAGE LEADS
-                </Typography>
-                <Typography variant="h5">
-                Build your own list of favorites, assign owner, set status and manage your deal funnel efficiently.
-                </Typography>
-              </div>
-            </Grid>
-            <Grid item xs={12} md={4}>
-             <div className={classes.item}>
-                <DescriptionOutlined style={{ fontSize: 50 }} className={classes.icon}/>
-                <Typography variant="h4" className={classes.title}>
-                SHARE DOCS
-                </Typography>
-                <Typography variant="h5">
-                Upload your docs, invite investors to your data room and easliy manage who sees what.
-                </Typography>
-              </div>  
-            </Grid>
-          </Grid>
-        </div>
+    
       </Container> 
     </section>
   );
