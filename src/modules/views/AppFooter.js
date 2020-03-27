@@ -26,7 +26,7 @@ export default function AppFooter() {
     <Typography component="footer" className={classes.root}>
       <Container className={classes.container}>
         
-              <Typography variant="h5" align="center" fontColor="#ffffff">
+              <Typography variant="h5" align="center">
               All rights reserved @ Raizer
             </Typography>
        
