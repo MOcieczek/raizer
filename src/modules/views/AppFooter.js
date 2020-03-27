@@ -10,6 +10,11 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: "#574EFF",
 
   },
+  more : {
+        color: theme.palette.common.white,
+
+    
+  },
   container: {
     marginTop: theme.spacing(8),
     marginBottom: theme.spacing(8),
@@ -26,7 +31,8 @@ export default function AppFooter() {
     <Typography component="footer" className={classes.root}>
       <Container className={classes.container}>
         
-              <Typography variant="h5" align="center">
+
+              <Typography variant="body2" align="center" className={classes.more}>
               All rights reserved @ Raizer
             </Typography>
        

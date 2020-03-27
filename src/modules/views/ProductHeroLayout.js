@@ -11,7 +11,7 @@ import Background from '../../assets/background.png';
 const styles = theme => ({
   root: {
     color: theme.palette.common.white,
-    textShadow: '-1px 1px 10px rgba(0, 0, 0, 0.2)',
+    textShadow: '-1px 1px 20px rgba(0, 0, 0, 0.3)',
     position: 'relaive',
     display: 'flex',
     [theme.breakpoints.up('sm')]: {
