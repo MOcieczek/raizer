@@ -4,20 +4,28 @@ import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 import Typography from '../components/Typography';
+import LocalAtmOutlined from '@material-ui/icons/LocalAtmOutlined';
+import FavoriteBorderOutlined from '@material-ui/icons/FavoriteBorderOutlined';
+import DescriptionOutlined from '@material-ui/icons/DescriptionOutlined';
+
+
 
 const styles = theme => ({
   root: {
     display: 'flex',
-    backgroundColor: theme.palette.secondary.light,
     overflow: 'hidden',
+    backgroundColor: "white",
+    backgroundColor: "white",
+
   },
   container: {
-    marginTop: theme.spacing(10),
-    marginBottom: theme.spacing(15),
-    position: 'relative',
+    marginTop: theme.spacing(7),
+    marginBottom: theme.spacing(10),
     display: 'flex',
+    position: 'relative',
     flexDirection: 'column',
     alignItems: 'center',
+
   },
   item: {
     display: 'flex',
@@ -25,93 +33,80 @@ const styles = theme => ({
     alignItems: 'center',
     padding: theme.spacing(0, 5),
   },
-  title: {
-    marginBottom: theme.spacing(14),
-  },
-  number: {
-    fontSize: 24,
-    fontFamily: theme.typography.fontFamily,
-    color: theme.palette.secondary.main,
-    fontWeight: theme.typography.fontWeightMedium,
-  },
   image: {
-    height: 55,
-    marginTop: theme.spacing(4),
-    marginBottom: theme.spacing(4),
+    height: 35,
   },
-  curvyLines: {
-    pointerEvents: 'none',
-    position: 'absolute',
-    top: -180,
-    opacity: 0.7,
+  titles: {
+    marginTop: theme.spacing(5),
+    marginBottom: theme.spacing(3), 
   },
-  button: {
-    marginTop: theme.spacing(8),
+  headline: {
+    marginTop: theme.spacing(5),
+    marginBottom: theme.spacing(10), 
+
   },
+  icon: {
+    color:"#574EFF", 
+    
+  }, 
+
 });
 
-function ProductHowItWorks(props) {
+function ProductValues(props) {
   const { classes } = props;
 
   return (
     <section className={classes.root}>
       <Container className={classes.container}>
-    
-        <Typography variant="h4" marked="center" className={classes.title} component="h2">
-          How it works
-        </Typography>
+              <Typography variant="h4" className={classes.headline}>
+                HOW IT WORKS
+              </Typography>
         <div>
           <Grid container spacing={5}>
             <Grid item xs={12} md={4}>
               <div className={classes.item}>
-                <div className={classes.number}>1.</div>
-                <img
-                  src="/static/themes/onepirate/productHowItWorks1.svg"
-                  alt="suitcase"
-                  className={classes.image}
-                />
-                <Typography variant="h5" align="center">
-                  Appointment every Wednesday 9am.
+                <LocalAtmOutlined style={{ fontSize: 50 }} className={classes.icon}/>
+                <Typography variant="h4" className={classes.titles}>
+                FIND INVESTORS
+                </Typography>
+                <Typography variant="h5">
+                Free list of 3000+ global investors, from seed to late stage, with filters to help you find the relevant ones.
                 </Typography>
               </div>
             </Grid>
             <Grid item xs={12} md={4}>
               <div className={classes.item}>
-                <div className={classes.number}>2.</div>
-                <img
-                  src="/static/themes/onepirate/productHowItWorks2.svg"
-                  alt="graph"
-                  className={classes.image}
-                />
-                <Typography variant="h5" align="center">
-                  First come, first served. Our offers are in limited quantities, so be quick.
+                <FavoriteBorderOutlined style={{ fontSize: 50 }} className={classes.icon}/>
+                <Typography variant="h4" className={classes.titles}>
+                MANAGE LEADS
+                </Typography>
+                <Typography variant="h5">
+                Build your own list of favorites, assign owner, set status and manage your deal funnel efficiently.
                 </Typography>
               </div>
             </Grid>
             <Grid item xs={12} md={4}>
-              <div className={classes.item}>
-                <div className={classes.number}>3.</div>
-                <img
-                  src="/static/themes/onepirate/productHowItWorks3.svg"
-                  alt="clock"
-                  className={classes.image}
-                />
-                <Typography variant="h5" align="center">
-                  {'New offers every week. New experiences, new surprises. '}
-                  {'Your Sundays will no longer be alike.'}
+             <div className={classes.item}>
+                <DescriptionOutlined style={{ fontSize: 50 }} className={classes.icon}/>
+                <Typography variant="h4" className={classes.titles}>
+                SHARE DOCS
                 </Typography>
-              </div>
+                <Typography variant="h5">
+                Upload your docs, invite investors to your data room and easliy manage who sees what.
+                </Typography>
+              </div>  
             </Grid>
           </Grid>
         </div>
- 
-      </Container>
+      </Container> 
     </section>
   );
 }
 
-ProductHowItWorks.propTypes = {
+
+
+ProductValues.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(ProductHowItWorks);
+export default withStyles(styles)(ProductValues);

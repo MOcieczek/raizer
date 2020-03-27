@@ -16,6 +16,7 @@ const styles = theme => ({
     overflow: 'hidden',
     backgroundColor: "white",
     backgroundColor: theme.palette.secondary.light,
+    marginBottom: "5%",
 
   },
   container: {
@@ -44,7 +45,11 @@ const styles = theme => ({
     color:"#574EFF", 
     
   }, 
+  headline: {
+    marginTop: theme.spacing(5),
+    marginBottom: theme.spacing(10), 
 
+  },
 });
 
 function ProductValues(props) {
@@ -53,7 +58,7 @@ function ProductValues(props) {
   return (
     <section className={classes.root}>
       <Container className={classes.container}>
-              <Typography variant="h2" className={classes.title}>
+              <Typography variant="h4" className={classes.headline}>
                 HOW IT WORKS
               </Typography>
         <div>
