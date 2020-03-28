@@ -10,18 +10,15 @@ export default withStyles(theme => ({
     fontSize: theme.typography.pxToRem(14),
     backgroundColor: 'black',  
     color: 'white',  
-    boxShadow: 'none',
-    '&:active, &:focus': {
-      boxShadow: 'none',
-      },
     },
+  
     
-  sizeSmall: {
+    sizeSmall: {
     padding: theme.spacing(1, 3),
     fontSize: theme.typography.pxToRem(13),
-  },
-  sizeLarge: {
+    },
+    sizeLarge: {
     padding: theme.spacing(2, 5),
     fontSize: theme.typography.pxToRem(16),
-  },
+    },
 }))(Button);

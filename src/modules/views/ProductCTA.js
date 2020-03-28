@@ -41,6 +41,14 @@ const styles = theme => ({
 
   button: {
     minWidth: 150,
+    maxWidth: 150,
+    variant: 'outlined',
+    borderColor: 'white',
+    backgroundColor: 'black',
+    '&:hover': {
+        backgroundColor: '#ffffff',
+        color: '#000000'
+    },
   },
   imagesWrapper: {
     position: 'relative',
@@ -82,7 +90,7 @@ function ProductCTA(props) {
         <Grid item xs={12} md={6} className={classes.cardWrapper}>
           <div className={classes.card}>
             <form onSubmit={handleSubmit} className={classes.cardContent}>
-              <Typography variant="h2" component="h2" gutterBottom>
+              <Typography variant="h3" component="h2" gutterBottom>
                 Hey founders!
               </Typography>
               <Typography variant="h5">
@@ -90,7 +98,6 @@ function ProductCTA(props) {
               </Typography>
               <br></br>
               <Button
-                variant="contained"
                 size="large"
                 className={classes.button}
                 component="a"
