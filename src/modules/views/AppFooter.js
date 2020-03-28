@@ -7,7 +7,7 @@ import Typography from '../components/Typography';
 const useStyles = makeStyles(theme => ({
   root: {
     display: 'flex',
-    backgroundColor: "#574EFF",
+    backgroundColor: "#000000",
 
   },
   more : {
