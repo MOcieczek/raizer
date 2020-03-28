@@ -4,7 +4,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Link from '@material-ui/core/Link';
 import AppBar from '../components/AppBar';
 import Toolbar, { styles as toolbarStyles } from '../components/Toolbar';
-import Logo from '../../assets/logo.jpeg';
+import Logo from '../../assets/logo.png';
 
 const styles = theme => ({
   title: {
@@ -45,7 +45,7 @@ function AppAppBar(props) {
         <Toolbar className={classes.toolbar}>
           <div />
             <img 
-            height="30"
+            height="35"
             alt="logo"
             src={Logo}
             />
