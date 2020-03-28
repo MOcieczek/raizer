@@ -39,6 +39,7 @@ const styles = theme => ({
   titles: {
     marginTop: theme.spacing(5),
     marginBottom: theme.spacing(3), 
+  
   },
   headline: {
     marginTop: theme.spacing(5),
@@ -59,7 +60,7 @@ function ProductValues(props) {
   return (
     <section className={classes.root}>
       <Container className={classes.container}>
-              <Typography variant="h4" className={classes.headline}>
+              <Typography variant="h3" className={classes.headline}>
                 HOW IT WORKS
               </Typography>
         <div>
