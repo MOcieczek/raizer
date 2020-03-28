@@ -10,13 +10,12 @@ import Background from '../../assets/background.png';
 
 const styles = theme => ({
   root: {
-    color: theme.palette.common.white,
-    textShadow: '-1px 1px 20px rgba(0, 0, 0, 0.3)',
+    color: theme.palette.common.black,
     position: 'relaive',
     display: 'flex',
     [theme.breakpoints.up('sm')]: {
       height: '70vh',
-      minHeight: 500,
+      minHeight: 600,
     },
   },
   container: {
@@ -27,8 +26,6 @@ const styles = theme => ({
     marginLeft: 'unset',
     justifyContent: 'center',
     maxWidth: "xs",
-    
-    
 
   },
   backdrop: {
@@ -41,7 +38,7 @@ const styles = theme => ({
     right: 0,
     top: 0,
     bottom: 0,
-    backgroundColor:"#574EFF",
+    backgroundColor:"rgb(255,153,153,0.3)",
     opacity: "100%",
     zIndex: -1,
   },

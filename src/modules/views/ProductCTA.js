@@ -32,7 +32,7 @@ const styles = theme => ({
   card: {
     display: 'flex',
     justifyContent: 'center',
-    backgroundColor: "#A8FFDB",
+    backgroundColor: "rgb(0,255,204,0.7)",
     padding: theme.spacing(8, 3),
   },
   cardContent: {
