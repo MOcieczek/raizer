@@ -61,7 +61,7 @@ function ProductHero(props) {
         component="a"
         target="_blank"
         href="https://raizerwaitlist.typeform.com/to/pBcsAG"
-      >
+        >
         Waitlist
       </Button>
       <Typography variant="body2" color="inherit" className={classes.more}>
