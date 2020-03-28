@@ -26,6 +26,7 @@ const styles = theme => ({
     marginLeft: 'unset',
     justifyContent: 'center',
     maxWidth: "xs",
+  
 
   },
   backdrop: {
