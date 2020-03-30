@@ -53,21 +53,11 @@ const styles = theme => ({
   imagesWrapper: {
     position: 'relative',
   },
-  imageDots: {
-    position: 'absolute',
-    top: -67,
-    left: -67,
-    right: 0,
-    bottom: 0,
-    width: '100%',
-    background: 'url(/static/onepirate/productCTAImageDots.png)',
-  },
+
+
   image: {
     position: 'absolute',
-    top: -28,
-    left: -28,
-    right: 0,
-    bottom: 0,
+    left: '10%',
     width: '100%',
     maxWidth: 600,
   },
@@ -107,7 +97,6 @@ function ProductCTA(props) {
         </Grid>
         <Grid item xs={12} md={6} className={classes.imagesWrapper}>
           <Hidden smDown>
-            <div className={classes.imageDots} />
             <img
               src={InvestorList}
               alt="list"
