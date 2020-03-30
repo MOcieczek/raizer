@@ -14,30 +14,28 @@ const styles = theme => ({
     alignItems: 'center',
     overflow: 'hidden',
     backgroundColor: "#ffffff",
-    
-    
+    paddingTop: '5%',
+    paddingBottom: '5%',
   },
   container: {
-    marginTop: '10%',
+    display: 'flex',
     position: 'relative',
+    alignItems: 'center',
+  },
+  image: {
+    width: '70%',
+  },
+  item: {
     flexDirection: 'column',
     alignItems: 'center',
-    color: "#ffffff",
-    flexDirection: 'column',
-    justifyContent: 'center',  
-    position: 'relative',
+    padding: theme.spacing(0, 5),
   },
-
 
   h5: {
     marginBottom: theme.spacing(3),
-    marginTop: theme.spacing(2),
     [theme.breakpoints.up('sm')]: {
       marginTop: theme.spacing(1),    
     },
-  },
-  grid: {
-    
   },
 
 });
@@ -47,25 +45,32 @@ function ProductValues(props) {
   const { classes } = props;
 
   return (
-    <Container className={classes.root} component="section">
-      <Grid container
+    <Container className={classes.root}>
+      <Grid container 
+        className={classes.container}
+        spacing={3}
         direction="row"
         alignItems="center"
         >
-              <Typography variant="h3">
+      <Grid item xs={12} sm={6}>
+      <div className={classes.item}>
+          <Typography variant="h4">
                 DID YOU KNOW...
               </Typography>
-              <Typography variant="h5" className={classes.h5}>
+              <Typography variant="h5" marginBottom="1%" className={classes.h5}>
                 ...that founders spend way too much time fundraising?
               </Typography>
-       
+      </div>
       </Grid>
-      <Grid item xs={12} md={6}>
+      <Grid item xs={12} sm={6}>
+      <div className={classes.item}>
           <img
               src={InvestorList}
               alt="list"
               className={classes.image}
           />
+          </div>
+      </Grid>
       </Grid>
     </Container>
   
