@@ -11,7 +11,7 @@ import Background from '../../assets/background.png';
 const styles = theme => ({
   root: {
     color: theme.palette.common.black,
-    position: 'relaive',
+    position: 'relative',
     display: 'flex',
     [theme.breakpoints.up('sm')]: {
       height: '70vh',
@@ -23,19 +23,18 @@ const styles = theme => ({
     marginTop: theme.spacing(10),
     display: 'flex',
     flexDirection: 'column',
-    marginLeft: 'unset',
+    marginLeft: 'inherit',
     justifyContent: 'center',
-    maxWidth: "xs",
   
 
   },
   backdrop: {
-    backgroundImage:`url( ${Background} )`,
+    //backgroundImage:`url( ${Background} )`,//
     backgroundSize: 'cover',
+    marginBottom: '0',
     height: 'auto',
     width: '100%',
     position: 'absolute',
-    left: 0,
     right: 0,
     top: 0,
     bottom: 0,
