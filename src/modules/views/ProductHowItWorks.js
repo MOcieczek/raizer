@@ -15,7 +15,6 @@ const styles = theme => ({
     display: 'flex',
     overflow: 'hidden',
     backgroundColor: "white",
-    backgroundColor: "white",
 
   },
   container: {
