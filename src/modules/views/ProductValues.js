@@ -5,7 +5,7 @@ import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 import Typography from '../components/Typography';
 import InvestorList from '../../assets/investorList.png';
-
+import Friend from '../../assets/friend.png';
 
 
 const styles = theme => ({
@@ -54,17 +54,17 @@ function ProductValues(props) {
       <Grid item xs={12} sm={6}>
       <div className={classes.item}>
           <Typography variant="h4">
-                DID YOU KNOW...
+                FOUNDER FRIENDLY FUNDRAISING
               </Typography>
               <Typography variant="h5" className={classes.h5}>
-                ...that founders spend way too much time fundraising?
+                Founders spend way too much time fundraising, says everyone. Raizer is here to help.
               </Typography>
       </div>
       </Grid>
       <Grid item xs={12} sm={6}>
       <div className={classes.item}>
           <img
-              src={InvestorList}
+              src={Friend}
               alt="list"
               className={classes.image}
           />
