@@ -4,9 +4,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 import Typography from '../components/Typography';
-import LocalAtmOutlined from '@material-ui/icons/LocalAtmOutlined';
 import FavoriteBorderOutlined from '@material-ui/icons/FavoriteBorderOutlined';
-import DescriptionOutlined from '@material-ui/icons/DescriptionOutlined';
 
 
 
@@ -18,12 +16,13 @@ const styles = theme => ({
     
   },
   container: {
-    marginTop: theme.spacing(7),
+    marginTop: '2%',
     marginBottom: theme.spacing(10),
     display: 'flex',
     position: 'relative',
     flexDirection: 'column',
     alignItems: 'center',
+    color: "#ffffff",
   },
   
   headline: {
@@ -31,20 +30,45 @@ const styles = theme => ({
     marginBottom: theme.spacing(10), 
     color: "#ffffff",
   },
+  titles: {
+    color: "#ffffff",
+  },
 });
+
 
 function ProductValues(props) {
   const { classes } = props;
 
   return (
-    <section className={classes.root}>
-      <Container className={classes.container}>
-              <Typography variant="h4" className={classes.headline}>
-                WHY RAIZER
+    <Container className={classes.root} component="section">
+      <Grid container>
+        <Grid item xs={12} md={6} className={classes.cardWrapper}>
+          <div className={classes.card}>
+            <form onSubmit={handleSubmit} className={classes.cardContent}>
+              <Typography variant="h3" component="h2" gutterBottom>
+                Hey founders!
               </Typography>
-    
-      </Container> 
-    </section>
+              <Typography variant="h5">
+                Sign up to our waitlist, and you'll be fundraising like a super star before you know it <Emoji symbol="✌️" label="winning"/>
+              </Typography>
+              <br></br>
+            </form>
+          </div>
+        </Grid>
+        <Grid item xs={12} md={6} className={classes.imagesWrapper}>
+          <Hidden smDown>
+            <div className={classes.imageDots} />
+            <img
+              src={InvestorList}
+              alt="list"
+              className={classes.image}
+            />
+          </Hidden>
+        </Grid>
+      </Grid>
+ 
+    </Container>
+  
   );
 }
 

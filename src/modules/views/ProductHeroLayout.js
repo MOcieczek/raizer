@@ -25,11 +25,9 @@ const styles = theme => ({
     flexDirection: 'column',
     marginLeft: 'inherit',
     justifyContent: 'center',
-  
 
   },
   backdrop: {
-    //backgroundImage:`url( ${Background} )`,//
     backgroundSize: 'cover',
     marginBottom: '0',
     height: 'auto',
@@ -42,6 +40,7 @@ const styles = theme => ({
     opacity: "100%",
     zIndex: -1,
   },
+
   background: {
     position: 'absolute',
     left: 0,
