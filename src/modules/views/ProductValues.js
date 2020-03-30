@@ -4,7 +4,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 import Typography from '../components/Typography';
-import FavoriteBorderOutlined from '@material-ui/icons/FavoriteBorderOutlined';
+import InvestorList from '../../assets/investorList.png';
 
 
 
@@ -44,26 +44,26 @@ function ProductValues(props) {
       <Grid container>
         <Grid item xs={12} md={6} className={classes.cardWrapper}>
           <div className={classes.card}>
-            <form onSubmit={handleSubmit} className={classes.cardContent}>
+            <form className={classes.cardContent}>
               <Typography variant="h3" component="h2" gutterBottom>
                 Hey founders!
               </Typography>
               <Typography variant="h5">
-                Sign up to our waitlist, and you'll be fundraising like a super star before you know it <Emoji symbol="✌️" label="winning"/>
+                Sign up to our waitlist, and you'll be fundraising like a super star before you know it.
               </Typography>
               <br></br>
             </form>
           </div>
         </Grid>
         <Grid item xs={12} md={6} className={classes.imagesWrapper}>
-          <Hidden smDown>
+          
             <div className={classes.imageDots} />
             <img
               src={InvestorList}
               alt="list"
               className={classes.image}
             />
-          </Hidden>
+          
         </Grid>
       </Grid>
  

@@ -77,10 +77,6 @@ function ProductCTA(props) {
   const { classes } = props;
   const [setOpen] = React.useState(false);
 
-  const handleSubmit = event => {
-    event.preventDefault();
-    setOpen(true);
-  };
 
   
 
@@ -89,7 +85,7 @@ function ProductCTA(props) {
       <Grid container>
         <Grid item xs={12} md={6} className={classes.cardWrapper}>
           <div className={classes.card}>
-            <form onSubmit={handleSubmit} className={classes.cardContent}>
+            <form className={classes.cardContent}>
               <Typography variant="h3" component="h2" gutterBottom>
                 Hey founders!
               </Typography>
