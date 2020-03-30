@@ -14,7 +14,7 @@ const styles = theme => ({
     alignItems: 'center',
     overflow: 'hidden',
     backgroundColor: "#ffffff",
-    paddingTop: '5%',
+    paddingTop: theme.spacing(8),
     paddingBottom: '5%',
   },
   container: {
@@ -33,9 +33,8 @@ const styles = theme => ({
 
   h5: {
     marginBottom: theme.spacing(3),
-    [theme.breakpoints.up('sm')]: {
-      marginTop: theme.spacing(1),    
-    },
+    marginTop: theme.spacing(2),    
+    
   },
 
 });
@@ -57,7 +56,7 @@ function ProductValues(props) {
           <Typography variant="h4">
                 DID YOU KNOW...
               </Typography>
-              <Typography variant="h5" marginBottom="1%" className={classes.h5}>
+              <Typography variant="h5" className={classes.h5}>
                 ...that founders spend way too much time fundraising?
               </Typography>
       </div>
