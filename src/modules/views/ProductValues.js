@@ -11,28 +11,35 @@ import InvestorList from '../../assets/investorList.png';
 const styles = theme => ({
   root: {
     display: 'flex',
+    alignItems: 'center',
     overflow: 'hidden',
-    backgroundColor: "#574EFF",
+    backgroundColor: "#ffffff",
+    
     
   },
   container: {
-    marginTop: '2%',
-    marginBottom: theme.spacing(10),
-    display: 'flex',
+    marginTop: '10%',
     position: 'relative',
     flexDirection: 'column',
     alignItems: 'center',
     color: "#ffffff",
+    flexDirection: 'column',
+    justifyContent: 'center',  
+    position: 'relative',
   },
-  
-  headline: {
-    marginTop: theme.spacing(5),
-    marginBottom: theme.spacing(10), 
-    color: "#ffffff",
+
+
+  h5: {
+    marginBottom: theme.spacing(3),
+    marginTop: theme.spacing(2),
+    [theme.breakpoints.up('sm')]: {
+      marginTop: theme.spacing(1),    
+    },
   },
-  titles: {
-    color: "#ffffff",
+  grid: {
+    
   },
+
 });
 
 
@@ -41,32 +48,25 @@ function ProductValues(props) {
 
   return (
     <Container className={classes.root} component="section">
-      <Grid container>
-        <Grid item xs={12} md={6} className={classes.cardWrapper}>
-          <div className={classes.card}>
-            <form className={classes.cardContent}>
-              <Typography variant="h3" component="h2" gutterBottom>
-                Hey founders!
+      <Grid container
+        direction="row"
+        alignItems="center"
+        >
+              <Typography variant="h3">
+                DID YOU KNOW...
               </Typography>
-              <Typography variant="h5">
-                Sign up to our waitlist, and you'll be fundraising like a super star before you know it.
+              <Typography variant="h5" className={classes.h5}>
+                ...that founders spend way too much time fundraising?
               </Typography>
-              <br></br>
-            </form>
-          </div>
-        </Grid>
-        <Grid item xs={12} md={6} className={classes.imagesWrapper}>
-          
-            <div className={classes.imageDots} />
-            <img
+       
+      </Grid>
+      <Grid item xs={12} md={6}>
+          <img
               src={InvestorList}
               alt="list"
               className={classes.image}
-            />
-          
-        </Grid>
+          />
       </Grid>
- 
     </Container>
   
   );

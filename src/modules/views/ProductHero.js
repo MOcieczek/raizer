@@ -42,10 +42,6 @@ const styles = theme => ({
   body2: {
     marginBottom: theme.spacing(4),
     marginTop: theme.spacing(4),
-    marginLeft: "5%",
-    marginRight: "5%",
-  },
-  more: {
     marginTop: theme.spacing(2),
   },
   
@@ -73,7 +69,7 @@ function ProductHero(props) {
         href="https://raizerwaitlist.typeform.com/to/pBcsAG"> 
         Waitlist
         </Button>
-      <Typography variant="body2" color="inherit" className={classes.more}>
+      <Typography variant="body2" color="inherit" className={classes.body2}>
       <Emoji symbol="👆🏾" label="pointer-up"/>Sign up to our waitlist, and be the first one to try Raizer when we launch! 
       </Typography>
    
