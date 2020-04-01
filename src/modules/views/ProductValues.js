@@ -52,6 +52,15 @@ function ProductValues(props) {
         >
       <Grid item xs={12} sm={6}>
       <div className={classes.item}>
+          <img
+              src={Friend}
+              alt="list"
+              className={classes.image}
+          />
+          </div>
+      </Grid>
+      <Grid item xs={12} sm={6}>
+      <div className={classes.item}>
           <Typography variant="h4">
                 FOUNDER FRIENDLY FUNDRAISING
               </Typography>
@@ -59,15 +68,6 @@ function ProductValues(props) {
                 Founders spend way too much time fundraising, says everyone. Raizer is here to help.
               </Typography>
       </div>
-      </Grid>
-      <Grid item xs={12} sm={6}>
-      <div className={classes.item}>
-          <img
-              src={Friend}
-              alt="list"
-              className={classes.image}
-          />
-          </div>
       </Grid>
       </Grid>
     </Container>
