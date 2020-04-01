@@ -5,6 +5,7 @@ import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 import Typography from '../components/Typography';
 import Friend from '../../assets/friend.png';
+import Divider from '@material-ui/core/Divider';
 
 
 const styles = theme => ({
@@ -44,34 +45,36 @@ function ProductSmokingHero(props) {
 
   return (
     <Container className={classes.root}>
+      
       <Grid container 
         className={classes.container}
         spacing={3}
         direction="row"
         alignItems="center"
         >
-      <Grid item xs={12} sm={6}>
-      <div className={classes.item}>
+        <Grid item xs={12} sm={6}>
+          <div className={classes.item}>
           <Typography variant="h4">
-                FOUNDER FRIENDLY FUNDRAISING
+          FOUNDER FRIENDLY FUNDRAISING
               </Typography>
               <Typography variant="h5" className={classes.h5}>
-                Founders spend way too much time fundraising, says everyone. Raizer is here to help.
+                Founders spend too much time fundraising. Looking for, researching and managing investors is no-ones favorite part of the job. Raizer is here to help with some simple tools.
               </Typography>
-      </div>
-      </Grid>
-      <Grid item xs={12} sm={6}>
-      <div className={classes.item}>
+          </div>
+        </Grid>
+        <Grid item xs={12} sm={6}>
+          <div className={classes.item}>
           <img
               src={Friend}
               alt="list"
               className={classes.image}
           />
+          
           </div>
-      </Grid>
+        </Grid>
       </Grid>
     </Container>
-  
+    
   );
 }
 

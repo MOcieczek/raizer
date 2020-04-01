@@ -26,6 +26,7 @@ const styles = theme => ({
     backgroundColor: "#ffffff",
     paddingTop: theme.spacing(8),
     paddingBottom: '5%',
+  
   },
   container: {
     display: 'flex',
@@ -70,10 +71,11 @@ function ProductValues(props) {
           />
           </div>
       </Grid>
+      
       <Grid item xs={12} sm={6}>
       <div className={classes.item}>
           <Typography variant="h4">
-                FOUNDER FRIENDLY FUNDRAISING
+              EFFORTLESS FUNDRAISING
               </Typography>
               <Typography variant="h5" className={classes.h5}>
               <Emoji symbol="🔍" label="maginifier"/> Discover relevant investors<br></br>
@@ -88,7 +90,10 @@ function ProductValues(props) {
               </Typography>
       </div>
       </Grid>
+      
       </Grid>
+      <br></br>
+      <br></br>
     </Container>
   
   );

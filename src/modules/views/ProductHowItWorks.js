@@ -62,8 +62,10 @@ function ProductValues(props) {
               <Typography variant="h3" className={classes.headline}>
                 HOW IT WORKS
               </Typography>
+             
         <div>
           <Grid container spacing={5}>
+          
             <Grid item xs={12} md={4}>
               <div className={classes.item}>
                 <LocalAtmOutlined style={{ fontSize: 50 }} className={classes.icon}/>
