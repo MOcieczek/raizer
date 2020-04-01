@@ -7,6 +7,17 @@ import Typography from '../components/Typography';
 import Friend from '../../assets/friend.png';
 
 
+const Emoji = props => (
+  <span
+      className="emoji"
+      role="img"
+      aria-label={props.label ? props.label : ""}
+      aria-hidden={props.label ? "false" : "true"}
+     >
+      {props.symbol}
+  </span>
+);
+
 const styles = theme => ({
   root: {
     display: 'flex',
@@ -65,7 +76,15 @@ function ProductValues(props) {
                 FOUNDER FRIENDLY FUNDRAISING
               </Typography>
               <Typography variant="h5" className={classes.h5}>
-                Founders spend way too much time fundraising, says everyone. Raizer is here to help.
+              <Emoji symbol="🔍" label="maginifier"/> Discover relevant investors<br></br>
+              <Emoji symbol="✅" label="maginifier"/> Filter on ticket size, location, focus etc<br></br>
+              <Emoji symbol="💜" label="maginifier"/> Build your own list with favorites<br></br>
+              <Emoji symbol="🤓" label="maginifier"/> Assign owner<br></br>
+              <Emoji symbol="👯‍♀️" label="maginifier"/> Collaborate with co-founders<br></br>
+              <Emoji symbol="🚦" label="maginifier"/> Set status<br></br>
+              <Emoji symbol="🖍" label="maginifier"/> Add notes<br></br>
+              <Emoji symbol="📊" label="maginifier"/> Share documents in data room <br></br>
+
               </Typography>
       </div>
       </Grid>

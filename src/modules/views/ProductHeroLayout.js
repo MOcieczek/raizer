@@ -3,9 +3,6 @@ import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import { withStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-import Background from '../../assets/background.png';
-
-
 
 
 const styles = theme => ({
