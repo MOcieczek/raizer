@@ -4,7 +4,6 @@ import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 import Typography from '../components/Typography';
-import InvestorList from '../../assets/investorList.png';
 import Friend from '../../assets/friend.png';
 
 

@@ -6,6 +6,7 @@ import ProductHowItWorks from './modules/views/ProductHowItWorks'
 import ProductCTA from './modules/views/ProductCTA'
 import AppAppBar from './modules/views/AppAppBar'
 import AppFooter from './modules/views/AppFooter'
+import ProductSmokingHero from './modules/views/ProductSmokingHero'
 
 
 function Index() {
@@ -14,6 +15,7 @@ function Index() {
       <AppAppBar />
       <ProductHero />
       <ProductValues/>
+      <ProductSmokingHero/>
       <ProductHowItWorks />
       <ProductCTA />
       <AppFooter />
