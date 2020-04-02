@@ -11,7 +11,6 @@ const styles = theme => ({
     position: 'relative',
     display: 'flex',
     [theme.breakpoints.up('sm')]: {
-      height: '70vh',
       minHeight: 600,
     },
   },
@@ -46,7 +45,6 @@ const styles = theme => ({
     bottom: 0,
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
-    
   },
 
 });
@@ -63,6 +61,7 @@ function ProductHeroLayout(props) {
         {children}
         
         <div className={classes.backdrop} />
+        
         <div className={clsx(classes.background, backgroundClassName)} />
         
       </Container>
