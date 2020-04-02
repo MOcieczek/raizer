@@ -14,7 +14,6 @@ const styles = theme => ({
   root: {
     display: 'flex',
     overflow: 'hidden',
-    backgroundColor: "white",
     backgroundColor: "rgb(0,0,0,0.05)",
   },
   container: {

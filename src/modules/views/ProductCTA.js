@@ -2,11 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
-import Hidden from '@material-ui/core/Hidden';
 import Container from '@material-ui/core/Container';
 import Typography from '../components/Typography';
 import Button from '../components/Button';
 import Placeholder from '../../assets/placeholder.png';
+import Hidden from '@material-ui/core/Hidden';
 
 const Emoji = props => (
   <span
@@ -22,23 +22,17 @@ const Emoji = props => (
 
 const styles = theme => ({
   root: {
-    marginTop: theme.spacing(2),
-    marginBottom: 30,
     display: 'flex',
-  },
-  cardWrapper: {
-    zIndex: 1,
-  
-  
-  },
-  card: {
-    display: 'flex',
+    overflow: 'hidden',
+    backgroundColor: "#574EFF",
     justifyContent: 'center',
-    backgroundColor: "rgb(0,255,204,0.7)",
-    padding: theme.spacing(8, 3),
+    position: 'relative',
   },
-  cardContent: {
-    maxWidth: 400,
+  container: {  
+    display: 'flex',
+    position: 'relative',
+    flexDirection: 'column',
+    justifyContent: 'center',
   },
 
   button: {
@@ -52,15 +46,26 @@ const styles = theme => ({
         color: '#000000'
     },
   },
-  imagesWrapper: {
+  image: {
     position: 'relative',
+    maxHeight: 300,
+    padding: "3%",
+  },
+  item: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    padding: theme.spacing(0, 5),
+    height: 400,
+    justifyContent: 'center',
+    alignItems: "left",
+  },
+  h3: {
+    color: "#ffffff",
   },
 
-
-  image: {
-    position: 'absolute',
-    left: '10%',
-    maxHeight: 300,
+  h5: {
+    color: "#ffffff",
   },
 });
 
@@ -72,15 +77,15 @@ function ProductCTA(props) {
   
 
   return (
-    <Container className={classes.root} component="section">
-      <Grid container>
-        <Grid item xs={12} md={6} className={classes.cardWrapper}>
-          <div className={classes.card}>
-            <form className={classes.cardContent}>
-              <Typography variant="h3" component="h2" gutterBottom>
+    <section className={classes.root}>
+      <Container className={classes.container}>
+      <Grid container spacing={10}>
+        <Grid item xs={12} md={6}>
+        <div className={classes.item}>
+              <Typography variant="h3" className={classes.h3}>
                 Hey founders!
               </Typography>
-              <Typography variant="h5">
+              <Typography variant="h5" className={classes.h5}>
                 Sign up to our waitlist, and you'll be fundraising like a super star before you know it <Emoji symbol="✌️" label="winning"/>
               </Typography>
               <br></br>
@@ -93,21 +98,23 @@ function ProductCTA(props) {
               >
                 Waitlist
               </Button>
-            </form>
           </div>
         </Grid>
-        <Grid item xs={12} md={6} className={classes.imagesWrapper}>
-          <Hidden smDown>
+        
+        <Grid item xs={12} md={6}>
+        <Hidden smDown>
+        <div className={classes.item}>
             <img
               src={Placeholder}
               alt="list"
               className={classes.image}
             />
-          </Hidden>
+        </div>
+        </Hidden>
         </Grid>
-      </Grid>
- 
+        </Grid>
     </Container>
+    </section>
   );
 }
 
