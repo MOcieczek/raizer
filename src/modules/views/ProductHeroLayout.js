@@ -25,8 +25,8 @@ const styles = theme => ({
 
   },
   backdrop: {
+    backgroundImage:`url( ${Placeholder} )`,
     backgroundSize: 'cover',
-    marginBottom: '0',
     height: 'auto',
     width: '100%',
     position: 'absolute',
