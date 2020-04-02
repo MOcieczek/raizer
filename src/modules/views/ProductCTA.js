@@ -6,7 +6,7 @@ import Hidden from '@material-ui/core/Hidden';
 import Container from '@material-ui/core/Container';
 import Typography from '../components/Typography';
 import Button from '../components/Button';
-import InvestorList from '../../assets/investorList.png';
+import Placeholder from '../../assets/placeholder.png';
 
 const Emoji = props => (
   <span
@@ -98,7 +98,7 @@ function ProductCTA(props) {
         <Grid item xs={12} md={6} className={classes.imagesWrapper}>
           <Hidden smDown>
             <img
-              src={InvestorList}
+              src={Placeholder}
               alt="list"
               className={classes.image}
             />

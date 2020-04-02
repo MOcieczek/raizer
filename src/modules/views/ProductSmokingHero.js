@@ -4,8 +4,8 @@ import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 import Typography from '../components/Typography';
-import Friend from '../../assets/friend.png';
-import Divider from '@material-ui/core/Divider';
+import Placeholder from '../../assets/placeholder.png';
+
 
 
 const styles = theme => ({
@@ -65,7 +65,7 @@ function ProductSmokingHero(props) {
         <Grid item xs={12} sm={6}>
           <div className={classes.item}>
           <img
-              src={Friend}
+              src={Placeholder}
               alt="list"
               className={classes.image}
           />
