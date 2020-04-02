@@ -56,7 +56,6 @@ const styles = theme => ({
   item: {
     display: 'flex',
     flexDirection: 'column',
-    alignItems: 'center',
     padding: theme.spacing(0, 5),
     height: 400,
     justifyContent: 'center',
@@ -74,8 +73,6 @@ const styles = theme => ({
 
 function ProductCTA(props) {
   const { classes } = props;
-  const [setOpen] = React.useState(false);
-
 
   
 

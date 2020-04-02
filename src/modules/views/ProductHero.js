@@ -42,7 +42,6 @@ const styles = theme => ({
   body2: {
     marginBottom: theme.spacing(4),
     marginTop: theme.spacing(4),
-    marginTop: theme.spacing(2),
   },
   
  
