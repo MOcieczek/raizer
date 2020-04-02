@@ -28,6 +28,8 @@ const styles = theme => ({
   },
   cardWrapper: {
     zIndex: 1,
+  
+  
   },
   card: {
     display: 'flex',
@@ -58,8 +60,7 @@ const styles = theme => ({
   image: {
     position: 'absolute',
     left: '10%',
-    width: '100%',
-    maxWidth: 600,
+    maxHeight: 300,
   },
 });
 
