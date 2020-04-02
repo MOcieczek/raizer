@@ -39,17 +39,19 @@ const styles = theme => ({
     minWidth: 150,
     maxWidth: 150,
     variant: 'outlined',
-    borderColor: 'white',
-    backgroundColor: 'black',
+    color: '#000000',
+    backgroundColor: 'white',
     '&:hover': {
-        backgroundColor: '#ffffff',
-        color: '#000000'
+        backgroundColor: '#000000',
+        color: '#ffffff'
     },
   },
   image: {
     position: 'relative',
     maxHeight: 300,
     padding: "3%",
+    width: '70%',
+    aspectRatio: 150 / 10,
   },
   item: {
     display: 'flex',
@@ -59,6 +61,7 @@ const styles = theme => ({
     height: 400,
     justifyContent: 'center',
     alignItems: "left",
+    maxWidth: 600,
   },
   h3: {
     color: "#ffffff",
@@ -79,7 +82,7 @@ function ProductCTA(props) {
   return (
     <section className={classes.root}>
       <Container className={classes.container}>
-      <Grid container spacing={10}>
+      <Grid container>
         <Grid item xs={12} md={6}>
         <div className={classes.item}>
               <Typography variant="h3" className={classes.h3}>
